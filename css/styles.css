@@ -39,6 +39,7 @@ p {
     background-color: #EAF6F6;
     position: relative;
     padding: 100px 100px 100px 100px;
+    margin: 0;
 }
 
 .skill-row {
@@ -65,6 +66,10 @@ p {
     height: 200px;
     float: left;
     margin-right: 30px;
+}
+
+.middle-container {
+    margin: 0;
 }
 
 .bottom-container {
