@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.25rem;
+}
+
+a {
+    color: #0f6a6d;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    color: #66BFBF;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-size: 2.5rem;
+}
+
+p {
+    line-height: 2;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {}
+
+.bottom-container {
+    background-color: #66BFBF;
+    margin: 0;
+    padding: 25px;
+}
+
+.profile {
+    padding: 100px 100px 50px 100px;
+}
+
+.skills {
+    padding: 50px 100px 50px 100px;
+}
+
+.contact-me {
+    padding: 50px 100px 50px 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 3.125rem;
+    right: 18.75rem;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.9rem;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 18.75rem;
+    bottom: 18.75rem;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 700px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+#profession {
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+#profile_photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
