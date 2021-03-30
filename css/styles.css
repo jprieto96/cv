@@ -87,7 +87,7 @@ p {
 }
 
 .contact-me {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 150px 100px;
 }
 
 .top-cloud {
@@ -124,6 +124,8 @@ p {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    position: relative;
+    top: 30px;
 }
 
 .btn:hover {
