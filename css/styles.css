@@ -1,163 +1,84 @@
-body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    font-size: 1.25rem;
-}
+/* navbar */
+.nav-text {
+    color: white;
+} 
 
-a {
-    color: #0f6a6d;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 20px;
-    text-decoration: none;
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('../images/background.png');
+    background-size:cover;
+    position:relative;
 }
-
-hr {
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-}
-
-h1 {
+/* text css above hero image*/
+.hero_title {
     font-family: 'Sacramento', cursive;
-    color: #66BFBF;
-    font-size: 5.625rem;
-    margin: 50px auto 0 auto;
+    font-size: 4.5rem;
 }
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #66BFBF;
-    font-size: 2.5rem;
+.hero_desc {
+    font-size: 2rem;
 }
-
-p {
-    line-height: 2;
-}
-
-.top-container {
-    background-color: #EAF6F6;
-    position: relative;
-    padding: 100px 100px 100px 100px;
-    margin: 0;
-}
-
-.skill-row {
-    text-align: left;
-    padding: 50px 100px 50px 100px;
-}
-
-.dev-skill {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 30px;
-}
-
-.light-build-skill {
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin-left: 30px;
-}
-
-.coffee-skill {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 30px;
-}
-
-.middle-container {
-    margin: 0;
-}
-
-.bottom-container {
-    background-color: #66BFBF;
-    margin: 0;
-    padding: 25px;
-}
-
-.profile {
-    padding: 100px 100px 50px 100px;
-}
-
-.skills {
-    padding: 50px 100px 50px 100px;
-}
-
-.contact-me {
-    padding: 50px 100px 150px 100px;
-}
-
-.top-cloud {
-    position: absolute;
-    top: 3.125rem;
-    right: 18.75rem;
-}
-
-.copyright {
-    color: #EAF6F6;
-    font-size: 0.9rem;
-    padding: 20px 0;
-    margin-bottom: 0;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 18.75rem;
-    bottom: 3.125rem;
-}
-
-.btn {
-    background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    position: relative;
-    top: 30px;
-}
-
-.btn:hover {
-    background: #30e3cb;
-    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 700px;
-    width: 30px;
+.hero-text {
     text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-.fa:hover {
-    opacity: 0.7;
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
 }
 
-#profession {
-    color: #66BFBF;
-    font-weight: normal;
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
 }
 
-#profile_photo {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #000;
+    text-align: center;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
 }
