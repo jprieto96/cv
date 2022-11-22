@@ -1,6 +1,53 @@
+/* Logic for arrows */
+.arrow,.arrow:before {
+    position: absolute;
+    left: 50%
+}
+  
+.arrow {
+    width: 40px;
+    height: 40px;
+    top: 85%;
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+
+.arrow:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }  
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }  
+}
+
 /* navbar */
-.nav-text {
+.nav-text, .nav-text-title {
     color: white;
+} 
+
+.nav-text:hover {
+    color: rgb(204, 204, 204);
 } 
 
 /* hero background image */
@@ -42,7 +89,16 @@
     text-align: center;
     width: 100%;
 }
+.card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+}
 .card-title {
+    text-align: center;
+}
+.card-text {
     text-align: center;
 }
 .card:hover .servicesIcon {
@@ -61,17 +117,33 @@
 .social-icons {
     font-size: 36px;
     cursor: pointer;
+    margin-top: 0px;
 }
-.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {
-    color: #008000;
+.fa-linkedin:hover {
+    color: #0e76a8;
 }
-.fab {
-    color: #000000;
+.fa-instagram:hover {
+    color: #833AB4;
+}
+.fa-twitter:hover {
+    color: #1DA1F2;
+}
+.fa-github:hover {
+    color: #4078c0;
+}
+.fa {
+    color: white;
+    padding-top: 20px;
 }
 /* footer styling */
 #footer {
     background-color: #000;
     text-align: center;
+}
+
+.copyright {
+    color: white;
+    padding-bottom: 20px;
 }
 
 /* spacing on all sections */
