@@ -83,13 +83,20 @@
 .skillsText.card {
     height: 280px;
     cursor: pointer;
-  }
-
-.card:hover {
-    color: #008000;
 }
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
 .skillsText:hover {
-    border: 1px solid #008000;
+    border: 1px solid #000000;
 }
 
 /* display background color black on navbar scroll */
