@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -26,7 +27,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon navbar-dark"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
@@ -169,85 +170,48 @@
 
     <!-- skills section-->
     <section id="skills">
-        <div class="container">
+        <div class="container mt-3">
             <h1 class="text-center">Skills</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">Backend Development</h4>
-                            <p class="card-text mt-3">
-                                Experience building APIs and micorservices, mainly with Java and Spring Boot.
-                                I have some examples built by me in my GitHub. 
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
+            <div class="card skillsText">
+                <div class="card-body">
+                    <h4 class="card-title mt-3">Software Architecture - Design Patterns</h4>
+                    <p class="card-text mt-3">
+                        Implement reusable and maintainable software over time by applying a 
+                        good architecture from the beginning and optimal design patterns so 
+                        that any change, migration, etc., is as inexpensive as possible. 
+                        Another benefit of this, is the ease of testing the units of our 
+                        code separately by mocking everything that comes out of the layer 
+                        to be tested, all its dependencies. You can see in my <a class="link" href="https://github.com/jprieto96" target="_blank">GitHub</a> the 
+                        projects in which I apply many of these patterns, such as repository, 
+                        factory, command, singleton, abstract factory, proxy, etc.
+                    </p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">SEO</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
+            <div class="card skillsText">
+                <div class="card-body">
+                    <h4 class="card-title mt-3">Backend Development</h4>
+                    <p class="card-text mt-3">
+                        Experience building APIs and micorservices, mainly with Java and Spring Boot, but sometimes I use Kotlin with Sring Boot.
+                        I have some examples built by me in my GitHub. 
+                        
+                    </p>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">DevOps</h4>
-                            <p class="card-text mt-3">
-                                Focus on CI/CD to improve productivity of the product. Experiece writing pipelines with Jenkins
-                                and GitHub actions 
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card skillsText">
+                <div class="card-body">
+                    <h4 class="card-title mt-3">Docker and Kubernetes</h4>
+                    <p class="card-text mt-3">
+                        Use all the power of docker and kubernetes to containerize my applications, make them reusable from anywhere, and many other things that these technologies do not offer.
+                    </p>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card skillsText">
-                        <div class="card-body">
-                            <h4 class="card-title mt-3">QA</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card skillsText">
+                <div class="card-body">
+                    <h4 class="card-title mt-3">DevOps</h4>
+                    <p class="card-text mt-3">
+                        Focus on CI/CD to improve productivity of the product. Experiece writing pipelines with Jenkins
+                        and GitHub actions.
+                    </p>
                 </div>
             </div>
         </div>
@@ -258,9 +222,9 @@
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Contact Me</h1>
             <div class="row mt-4">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12 col-xs-12">
                     <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;margin-bottom: 15px;">
                         <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;">
                             <iframe
                                 style="height:100%;width:100%;border:0;" frameborder="0"
@@ -282,18 +246,18 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12 col-xs-12">
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <form target="_blank" action="https://formsubmit.co/el/saneda" method="POST">
+                        <input type="text" name="name" class="form-control" placeholder="Name">
+                        <input type="email" name="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" name="subject" class="form-control mt-3" placeholder="Subject">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text"
-                                placeholder="Project Details"></textarea>
+                            <textarea class="form-control" rows="5" id="comment" name="content"
+                                placeholder="Your message"></textarea>
                         </div>
+                        <button type="submit" class="btn btn-primary mt-3">Contact Me</button>
                     </form>
-                    <button type="button" class="btn btn-primary mt-3">Contact Me</button>
                     <a class="btn btn-primary mt-3" href="resources/CV_International.pdf" download="file" target="_blank">Download CV</a>
 
                 </div>
