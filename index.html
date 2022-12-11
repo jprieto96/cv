@@ -16,6 +16,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Jose Prieto</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('dKUicKf4IHwFuZyf6');
+        })();
+    </script>
 </head>
 
 <body>
@@ -248,17 +255,18 @@
 
                 <div class="col-lg-6 col-sm-12 col-xs-12">
                     <!-- form fields -->
-                    <form target="_blank" action="https://formsubmit.co/el/saneda" method="POST">
-                        <input type="text" name="name" class="form-control" placeholder="Name">
-                        <input type="email" name="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" name="subject" class="form-control mt-3" placeholder="Subject">
+                    <form id="contact-form" method="POST">
+                        <input type="hidden" name="contact_number">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                        <input type="email" id="mail" name="mail" class="form-control mt-3" placeholder="Email">
+                        <input type="text" id="subject" name="subject" class="form-control mt-3" placeholder="Subject">
                         <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="content"
+                            <textarea class="form-control" rows="5" id="message" name="message"
                                 placeholder="Your message"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary mt-3">Contact Me</button>
                     </form>
-                    <a class="btn btn-primary mt-3" href="resources/CV_International.pdf" download="file" target="_blank">Download CV</a>
+                    <a class="btn btn-primary mt-3" href="resources/CV_JOSE_PRIETO.pdf" download="file" target="_blank">Download CV</a>
 
                 </div>
 
@@ -280,6 +288,13 @@
         </div>
     </footer>
 
+    <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
