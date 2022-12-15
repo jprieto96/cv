@@ -25,8 +25,10 @@ window.onload = function() {
         emailjs.sendForm(serviceID, templateID, this)
             .then(function() {
                 console.log('SUCCESS!');
+                alert("Your information has been sent correctly. Thank you for contacting me c:");
             }, function(error) {
                 console.log('FAILED...', error);
+                alert("Your information could not be sent correctly. Please try again.");
             });
     });
 }
