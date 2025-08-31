@@ -1,297 +1,472 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="origin">
+    <meta name="description"
+        content="Jose Ramon Prieto - Backend Software Engineer specialized in Java, Spring, and microservices architecture">
+    <title>Jose Prieto | Backend Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>Jose Prieto</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('dKUicKf4IHwFuZyf6');
-        })();
-    </script>
+    <style>
+        
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbarLight navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <p class="nav-text-title">Jose</p>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon navbar-dark"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">
-                            <p class="nav-text">Home</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <p class="nav-text">Portfolio</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">
-                            <p class="nav-text">Skills</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            <p class="nav-text">Contact</p>
-                        </a>
-                    </li>
-                </ul>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('es')">ES</button>
+    </div>
 
-            </div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">JRP</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" lang="en" class="active">Home</a></li>
+                <li><a href="#home" lang="es">Inicio</a></li>
+                <li><a href="#about" lang="en" class="active">About</a></li>
+                <li><a href="#about" lang="es">Sobre mí</a></li>
+                <li><a href="#experience" lang="en" class="active">Experience</a></li>
+                <li><a href="#experience" lang="es">Experiencia</a></li>
+                <li><a href="#skills" lang="en" class="active">Skills</a></li>
+                <li><a href="#skills" lang="es">Habilidades</a></li>
+                <li><a href="#projects" lang="en" class="active">Projects</a></li>
+                <li><a href="#projects" lang="es">Proyectos</a></li>
+                <li><a href="#certifications" lang="en" class="active">Certifications</a></li>
+                <li><a href="#certifications" lang="es">Certificaciones</a></li>
+                <li><a href="#contact" lang="en" class="active">Contact</a></li>
+                <li><a href="#contact" lang="es">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hi, I am Jose</h2>
-                    <p class="hero_desc">a backend software engineer</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 lang="en" class="active">Jose Ramon Prieto del Prado</h1>
+            <h1 lang="es">Jose Ramon Prieto del Prado</h1>
+            <p class="subtitle" lang="en" class="active">Backend Software Engineer</p>
+            <p class="subtitle" lang="es">Ingeniero de Software Backend</p>
+            <div class="hero-buttons">
+                <a href="resources/CV_JOSE_PRIETO_EN.pdf" download="file" target="_blank" class="btn btn-primary" lang="en">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="resources/CV_JOSE_PRIETO_ES.pdf" download="file" target="_blank" class="btn btn-primary" lang="es">
+                    <i class="fas fa-download"></i> Descargar CV
+                </a>
+                <a href="#contact" class="btn btn-secondary" lang="en" class="active">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+                <a href="#contact" class="btn btn-secondary" lang="es">
+                    <i class="fas fa-envelope"></i> Contactar
+                </a>
             </div>
-        </div>
-        <div class="container-fluid">
-            <a href="#portfolio"><div class="arrow"></div></a>
         </div>
     </section>
 
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <br>
-            <div class="row">
-                <div>
-                    <div class="card mb-3" style="border: none; margin-bottom: 30px;">
-                        <div class="row g-0">
-                          <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-                            <img src="images/my-space.png" class="img-fluid rounded-start" alt="MySpace">
-                          </div>
-                          <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
-                            <div class="card-body">
-                              <h5 class="card-title">MySpace</h5>
-                              <p class="card-text">
-                                Ongoing project. It helps the user to manage their own notes, actions, news. I am building a simple API with 
-                                Java and Spring Boot connected to SQL to store the necessary data. I plan to migrate to GraphQL to practice with 
-                                graph and binary tree based databases. The frontend is going to be a reactive web where the user will be able to choose 
-                                his favorite news web pages, choose his actions and make a personal follow up of them. I have also thought about doing this 
-                                project to practice my CI/CD techniques, I have made a pipeline with github actions and execute it in every push or pull 
-                                request to the master branch. The pipeline consists of running all the tests and generating the JAR with maven. If the 
-                                pipeline is called by a push to the master branch I also build an ubuntu based docker image to deploy the application inside, 
-                                and once the docker image has been built, I upload the docker image to my <a class="link" href="https://hub.docker.com/u/prt96" target="_blank">DockerHub</a>. Here you have my bakend repository of this 
-                                project, where you can see more in detail the pipeline with github actions that I have commented before. <a class="link" href="https://github.com/jprieto96/myspace-api" target="_blank">github.com/jprieto96/myspace-api</a>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title" lang="en" class="active">About Me</h2>
+        <h2 class="section-title" lang="es">Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <div lang="en" class="active">
+                    <p>Software engineer with over 4 years of experience specializing in the implementation and
+                        maintenance of backend microservices. My primary expertise is in Java and Spring Framework, and
+                        I excel at selecting appropriate architectures and design patterns to prioritize reliability,
+                        maintainability and scalability.</p>
+                    <p>I use AI tools and LLMs such as Gemini, ChatGPT, Anthropic, Lovable, GitHub Copilot or Grok on a
+                        daily basis to automate repetitive tasks, generate ideas, and create optimized workflows to be
+                        much more productive.</p>
+                    <p>Building scalable microservices architectures, implementing clean code principles, and leveraging
+                        cloud technologies to deliver robust enterprise solutions.</p>
                 </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div class="card mb-3" style="border: none; margin-bottom: 30px;">
-                        <div class="row g-0">
-                          <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
-                            <img src="images/finanz-you.png" class="img-fluid rounded-start" alt="FinanzYou">
-                          </div>
-                          <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
-                            <div class="card-body">
-                              <h5 class="card-title">FinanzYou</h5>
-                              <p class="card-text">
-                                Financial application that allows you to manage your portfolio,
-                                where you can see a complete description of your portfolio. In addition, the
-                                application contains a lot of charts showing your profit or loss history and
-                                many more data about your portfolio such as news, etc... Application
-                                available at <a class="link" href="https://finanzyoufront.herokuapp.com" target="_blank">finanzyoufront.herokuapp.com</a> and source code available at
-                                <a class="link" href="https://github.com/jprieto96/finanz-you-frontend" target="_blank">github.com/jprieto96/finanz-you-frontend</a> and
-                                <a class="link" href="https://github.com/jprieto96/finanz-you-backend" target="_blank">github.com/jprieto96/finanz-you-backend</a></p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <div class="card mb-3" style="border: none; margin-bottom: 30px;">
-                        <div class="row g-0">
-                          <div class="col-md-2 col-lg-2 col-sm-1 col-xs-1">
-                            <img src="images/myseries.png" class="img-fluid rounded-start" alt="MySeries">
-                          </div>
-                          <div class="col-md-10 col-lg-10 col-sm-11 col-xs-11">
-                            <div class="card-body">
-                              <h5 class="card-title">MySeries</h5>
-                              <p class="card-text">
-                                Android application for the management of series, movies and TV
-                                shows made with Java and released in the Play Store. Source code availabe
-                                at <a class="link" href="https://gitlab.com/jprieto96/myseries" target="_blank">gitlab.com/jprieto96/myseries</a></p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div>
-                    <div class="card mb-3" style="border: none; margin-bottom: 30px;">
-                        <div class="row g-0">
-                          <p style="text-align: center;">
-                            <i>
-                                <b>
-                                    To know more about what I am practicing, new technologies, little projects, 
-                                    testing new frameworks... Follow me on my <a class="link" href="https://github.com/jprieto96" target="_blank">GitHub</a>
-                                </b>
-                            </i>
-                          </p>
-                        </div>
-                    </div>
+                <div lang="es">
+                    <p>Ingeniero de software con más de 4 años de experiencia especializado en la implementación y
+                        mantenimiento de microservicios backend. Mi experiencia principal es en Java y Spring Framework,
+                        y destaco en la selección de arquitecturas apropiadas y patrones de diseño para priorizar la
+                        confiabilidad, mantenibilidad y escalabilidad.</p>
+                    <p>Uso herramientas de IA y LLMs como Gemini, ChatGPT, Anthropic, Lovable, GitHub Copilot o Grok
+                        diariamente para automatizar tareas repetitivas, generar ideas y crear flujos de trabajo
+                        optimizados para ser mucho más productivo.</p>
+                    <p>Construir arquitecturas de microservicios escalables, implementar principios de código limpio y
+                        aprovechar tecnologías cloud para entregar soluciones empresariales robustas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section-->
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title" lang="en" class="active">Work Experience</h2>
+        <h2 class="section-title" lang="es">Experiencia Laboral</h2>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">July 2023 - Actual</div>
+                <h3>Backend Software Engineer</h3>
+                <h4>BBVA Technology</h4>
+                <ul lang="en" class="active">
+                    <li>Engineered and developed a highly scalable microservices-driven solution using Java and Spring
+                        (APX
+                        architecture).</li>
+                    <li>Enhanced productivity by 30%+ via daily use of AI tools (Gemini, Copilot, etc.).</li>
+                    <li>Architected a multi-database strategy: Elasticsearch for traceability, MongoDB for high-volume
+                        balance messages, Oracle SQL for account configs.</li>
+                    <li>Participated in the migration of a legacy monolith to microservices.</li>
+                    <li>Managed hybrid deployments across on-prem, AWS, and GCP using IaC.</li>
+                    <li>Collaborated in automation of CI/CD with Jenkins, reducing deployment times.</li>
+                    <li>Applied agile methodologies to accelerate development cycles.</li>
+                </ul>
+                <ul lang="es">
+                    <li>Diseñé y desarrollé una solución de microservicios altamente escalable con Java y Spring
+                        (arquitectura APX).</li>
+                    <li>Mejoré la productividad en un 30%+ mediante el uso diario de herramientas de IA (Gemini,
+                        Copilot,
+                        etc.).</li>
+                    <li>Arquitecté una estrategia multi-base de datos: Elasticsearch para trazabilidad, MongoDB para
+                        mensajes de saldos, Oracle SQL para configuraciones.</li>
+                    <li>Participé en la migración de un monolito heredado a microservicios.</li>
+                    <li>Gestioné despliegues híbridos en on-prem, AWS y GCP usando IaC.</li>
+                    <li>Colaboré en la automatización de CI/CD con Jenkins, reduciendo tiempos de despliegue.</li>
+                    <li>Apliqué metodologías ágiles para acelerar los ciclos de desarrollo.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- UST -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">Aug 2022 - July 2023</div>
+                <h3>Java Software Engineer</h3>
+                <h4>UST Global</h4>
+                <ul lang="en" class="active">
+                    <li>Developed and maintained a high-performance Java application processing data from MQ queues and
+                        web services.</li>
+                    <li>Enhanced efficiency via optimized code and thorough testing.</li>
+                    <li>Automated tasks with BASH (SSH tunnels, Docker).</li>
+                    <li>Implemented SOLID, hexagonal architecture, and DDD.</li>
+                    <li>Decomposed a monolith into bounded contexts for scalability.</li>
+                </ul>
+                <ul lang="es">
+                    <li>Desarrollé y mantuve una aplicación Java de alto rendimiento procesando datos de colas MQ y
+                        servicios web.</li>
+                    <li>Mejoré la eficiencia mediante código optimizado y pruebas exhaustivas.</li>
+                    <li>Automaticé tareas con BASH (túneles SSH, Docker).</li>
+                    <li>Implementé SOLID, arquitectura hexagonal y DDD.</li>
+                    <li>Descompuse un monolito en contextos delimitados para mayor escalabilidad.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Stratesys -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">Feb 2022 - Aug 2022</div>
+                <h3>Software Engineer Internship</h3>
+                <h4>Stratesys</h4>
+                <ul lang="en" class="active">
+                    <li>Engineered a full-stack solution (Spring Boot + Angular) for corporate opportunities.</li>
+                    <li>Implemented Keycloak server on Azure with Docker.</li>
+                    <li>Optimized CI/CD pipeline fixing concurrency in GitHub Actions.</li>
+                </ul>
+                <ul lang="es">
+                    <li>Desarrollé una solución full-stack (Spring Boot + Angular) para oportunidades corporativas.</li>
+                    <li>Implementé servidor Keycloak en Azure con Docker.</li>
+                    <li>Optimicé pipeline CI/CD resolviendo problemas de concurrencia en GitHub Actions.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Pixelware -->
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">Mar 2018 - Sep 2018</div>
+                <h3>Full Stack Software Developer</h3>
+                <h4>Pixelware</h4>
+                <ul lang="en" class="active">
+                    <li>Engineered robust API endpoints and enhanced data models using Spring + JPA.</li>
+                    <li>Contributed critical functionalities to ongoing projects.</li>
+                    <li>Proactively expanded expertise in Java backend & Spring Framework.</li>
+                </ul>
+                <ul lang="es">
+                    <li>Desarrollé endpoints de API robustos y mejoré modelos de datos con Spring + JPA.</li>
+                    <li>Contribuí funcionalidades críticas en proyectos en curso.</li>
+                    <li>Amplié proactivamente mi experiencia en backend Java y Spring Framework.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="container mt-3">
-            <h1 class="text-center">Skills</h1>
-            <div class="card skillsText">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Software Architecture - Design Patterns</h4>
-                    <p class="card-text mt-3">
-                        Implement reusable and maintainable software over time by applying a 
-                        good architecture from the beginning and optimal design patterns so 
-                        that any change, migration, etc., is as inexpensive as possible. 
-                        Another benefit of this, is the ease of testing the units of our 
-                        code separately by mocking everything that comes out of the layer 
-                        to be tested, all its dependencies. You can see in my <a class="link" href="https://github.com/jprieto96" target="_blank">GitHub</a> the 
-                        projects in which I apply many of these patterns, such as repository, 
-                        factory, command, singleton, abstract factory, proxy, etc.
-                    </p>
+        <h2 class="section-title" lang="en" class="active">Technical Skills</h2>
+        <h2 class="section-title" lang="es">Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> <span lang="en" class="active">Languages & Frameworks</span><span
+                        lang="es">Lenguajes y Frameworks</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">J2EE</span>
+                    <span class="skill-tag">Spring Framework</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Kotlin</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">APX</span>
+                    <span class="skill-tag">ASO</span>
                 </div>
             </div>
-            <div class="card skillsText">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Backend Development</h4>
-                    <p class="card-text mt-3">
-                        Experience building APIs and micorservices, mainly with Java and Spring Boot, but sometimes I use Kotlin with Sring Boot.
-                        I have some examples built by me in my GitHub. 
-                        
-                    </p>
+            <div class="skill-category">
+                <h3><i class="fas fa-project-diagram"></i> <span lang="en" class="active">Architecture &
+                        Design</span><span lang="es">Arquitectura y Diseño</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Microservices</span>
+                    <span class="skill-tag">Hexagonal Architecture</span>
+                    <span class="skill-tag">APX Architecture</span>
+                    <span class="skill-tag">Domain-Driven Design</span>
+                    <span class="skill-tag">SOLID Principles</span>
+                    <span class="skill-tag">Design Patterns</span>
                 </div>
             </div>
-            <div class="card skillsText">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">Docker and Kubernetes</h4>
-                    <p class="card-text mt-3">
-                        Use all the power of docker and kubernetes to containerize my applications, make them reusable from anywhere, and many other things that these technologies do not offer.
-                    </p>
+            <div class="skill-category">
+                <h3><i class="fas fa-database"></i> <span lang="en" class="active">Databases</span><span lang="es">Bases
+                        de
+                        Datos</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Oracle SQL</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Elasticsearch</span>
                 </div>
             </div>
-            <div class="card skillsText">
-                <div class="card-body">
-                    <h4 class="card-title mt-3">DevOps</h4>
-                    <p class="card-text mt-3">
-                        Focus on CI/CD to improve productivity of the product. Experiece writing pipelines with Jenkins
-                        and GitHub actions.
-                    </p>
+            <div class="skill-category">
+                <h3><i class="fas fa-cloud"></i> <span lang="en" class="active">Cloud & DevOps</span><span
+                        lang="es">Cloud y
+                        DevOps</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">CI/CD</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> <span lang="en" class="active">Tools & Methodologies</span><span
+                        lang="es">Herramientas y Metodologías</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">GitLab</span>
+                    <span class="skill-tag">Bitbucket</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Keycloak</span>
+                    <span class="skill-tag">Scrum</span>
+                    <span class="skill-tag">Kanban</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-robot"></i> <span lang="en" class="active">AI Tools & LLMs</span><span
+                        lang="es">Herramientas IA y LLMs</span></h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Gemini</span>
+                    <span class="skill-tag">ChatGPT</span>
+                    <span class="skill-tag">Anthropic</span>
+                    <span class="skill-tag">Lovable</span>
+                    <span class="skill-tag">GitHub Copilot</span>
+                    <span class="skill-tag">Grok</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;margin-bottom: 15px;">
-                        <div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe
-                                style="height:100%;width:100%;border:0;" frameborder="0"
-                                src="https://www.google.com/maps/embed/v1/place?q=Madrid,+Spain&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googl-ehtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="grab-map-authorization">
-                            premium bootstrap themes
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title" lang="en" class="active">Featured Projects</h2>
+        <h2 class="section-title" lang="es">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>FinanzYou</h3>
+                    <p lang="en" class="active">A comprehensive full-stack financial application for investment
+                        portfolio
+                        management. Engineered a secure and efficient Java backend with Spring Boot to manage user
+                        portfolios and stock data via a robust API. Developed a dynamic Vue.js frontend with real-time
+                        stock
+                        valuations.</p>
+                    <p lang="es">Aplicación financiera full-stack integral para la gestión de carteras de inversión.
+                        Desarrollé un backend Java seguro y eficiente con Spring Boot para gestionar carteras de
+                        usuarios y
+                        datos bursátiles a través de una API robusta. Desarrollé un frontend dinámico en Vue.js con
+                        valoraciones bursátiles en tiempo real.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/jprieto96/finanz-you-frontend" target="_blank">
+                            <i class="fab fa-github"></i> Frontend
                         </a>
-                        <style>
-                            #embed-ded-map-canvas .text-marker {}
-
-                            .map-generator {
-                                max-width: 100%;
-                                max-height: 100%;
-                                background: none;
-                            }
-                        </style>
+                        <a href="https://github.com/jprieto96/finanz-you-backend" target="_blank">
+                            <i class="fab fa-github"></i> Backend
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-sm-12 col-xs-12">
-                    <!-- form fields -->
-                    <form id="contact-form" method="POST">
-                        <input type="hidden" name="contact_number">
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-                        <input type="email" id="mail" name="mail" class="form-control mt-3" placeholder="Email">
-                        <input type="text" id="subject" name="subject" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="message" name="message"
-                                placeholder="Your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-3">Contact Me</button>
-                    </form>
-                    <a class="btn btn-primary mt-3" href="resources/CV_JosePrieto.pdf" download="file" target="_blank">Download CV</a>
-
+            </div>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>MySeries</h3>
+                    <p lang="en" class="active">An Android application for managing series, movies, and TV shows.
+                        Designed
+                        and implemented a user-friendly frontend to enhance the user experience. Built the backend in
+                        Kotlin
+                        to explore advanced features like coroutines and asynchronous programming. Integrated push
+                        notification system with Firebase.</p>
+                    <p lang="es">Aplicación Android para gestionar series, películas y programas de TV. Diseñé e
+                        implementé
+                        un frontend amigable para mejorar la experiencia del usuario. Construí el backend en Kotlin para
+                        explorar características avanzadas como corrutinas y programación asíncrona. Integré sistema de
+                        notificaciones push con Firebase.</p>
+                    <div class="project-links">
+                        <a href="https://gitlab.com/jprieto96/myseries" target="_blank">
+                            <i class="fab fa-gitlab"></i> Source Code
+                        </a>
+                    </div>
                 </div>
-
+            </div>
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>MySpace</h3>
+                    <p lang="en" class="active">Ongoing project to help users manage their notes, actions, and news.
+                        Building a simple API with Java and Spring Boot connected to SQL. Planning to migrate to
+                        GraphQL.
+                        Implementing CI/CD pipeline with GitHub Actions for automated testing and Docker deployment.</p>
+                    <p lang="es">Proyecto en curso para ayudar a los usuarios a gestionar sus notas, acciones y
+                        noticias.
+                        Construyendo una API simple con Java y Spring Boot conectada a SQL. Planeando migrar a GraphQL.
+                        Implementando pipeline CI/CD con GitHub Actions para pruebas automatizadas y despliegue Docker.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/jprieto96/myspace-api" target="_blank">
+                            <i class="fab fa-github"></i> API Repository
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.linkedin.com/in/jose-ramon-prieto-del-prado" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/jprieto96" target="_blank"><i class="fa fa-github"></i></a>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2 class="section-title" lang="en" class="active">Certifications & Education</h2>
+        <h2 class="section-title" lang="es">Certificaciones y Educación</h2>
+        <div class="certifications-grid">
+            <div class="cert-card">
+                <i class="fab fa-microsoft"></i>
+                <h3>Azure Fundamentals</h3>
+                <p>Microsoft Certified: AZ-900</p>
+                <a href="https://www.credly.com/badges/56fcbd43-2e56-4e2c-ad69-094408fbacf4" target="_blank">
+                    <span lang="en" class="active">View Certificate</span>
+                    <span lang="es">Ver Certificado</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
-            <div class="copyright">
-                © Jose Prieto
+            <div class="cert-card">
+                <i class="fab fa-aws"></i>
+                <h3>Cloud Practitioner</h3>
+                <p>AWS Certified</p>
+                <a href="https://www.credly.com/badges/8956ad6c-1bc2-49c9-9915-29785b8c431f" target="_blank">
+                    <span lang="en" class="active">View Certificate</span>
+                    <span lang="es">Ver Certificado</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3 lang="en" class="active">DevOps Master</h3>
+                <h3 lang="es">Máster DevOps</h3>
+                <p>UNIR (2023-2024)</p>
+                <p lang="en" class="active">AWS, Azure, Security DevOps, Cloud Computing</p>
+                <p lang="es">AWS, Azure, Security DevOps, Cloud Computing</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-university"></i>
+                <h3 lang="en" class="active">Software Engineering</h3>
+                <h3 lang="es">Ingeniería de Software</h3>
+                <p lang="en" class="active">Universidad Complutense de Madrid</p>
+                <p lang="es">Universidad Complutense de Madrid</p>
+                <p lang="en" class="active">2018-2022 | GPA: 8.28/10</p>
+                <p lang="es">2018-2022 | Nota Media: 8.28/10</p>
+            </div>
+            <div class="cert-card">
+                <i class="fas fa-globe"></i>
+                <h3>Computer Science</h3>
+                <p>University of Hertfordshire</p>
+                <p lang="en" class="active">Erasmus Exchange 2021-2022</p>
+                <p lang="es">Intercambio Erasmus 2021-2022</p>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title" lang="en" class="active">Get In Touch</h2>
+        <h2 class="section-title" lang="es">Contacto</h2>
+        <div class="contact-content">
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <a href="mailto:joseprieto9657@gmail.com">joseprieto9657@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3 lang="en" class="active">Phone</h3>
+                <h3 lang="es">Teléfono</h3>
+                <a href="tel:+34682898814">+34 682 898 814</a>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3 lang="en" class="active">Location</h3>
+                <h3 lang="es">Ubicación</h3>
+                <p>Madrid, Spain</p>
+            </div>
+            <div class="contact-card">
+                <i class="fab fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/jose-ramon-prieto-del-prado" target="_blank">
+                    <span lang="en" class="active">Connect with me</span>
+                    <span lang="es">Conecta conmigo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/jose-ramon-prieto-del-prado" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/jprieto96" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://jprieto96.github.io/cv/" target="_blank">
+                <i class="fas fa-globe"></i>
+            </a>
+            <a href="mailto:joseprieto9657@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p lang="en" class="active">© 2024 Jose Ramon Prieto del Prado. All rights reserved.</p>
+        <p lang="es">© 2024 Jose Ramon Prieto del Prado. Todos los derechos reservados.</p>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
